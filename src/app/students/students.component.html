@@ -1,1 +1,28 @@
-<p>students works!</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">NET Exam</a>
+
+    </div>
+
+  </nav>
+<br>
+  <div class="container">
+    <table class="table table-striped">
+        <tr *ngFor="let student of students">
+
+            <td>{{student.name}}</td>
+            <td>{{student.age}}</td>
+            <td>{{student.qualification}}</td>
+            <td>{{student.category}}</td>
+            <td>{{student.nationality}}</td>
+            <td>{{student.dateofbirth}}</td>
+            <td>{{student.state}}</td>
+            <td>{{student.university}}</td>
+            <td>{{student.percentage}}</td>
+            <td>{{student.yearofpassing}}</td>
+            <td>{{student.district}}</td>
+            <td>{{student.qualification}}</td>
+            <td>{{student.category}}</td>
+        </tr>
+    </table>
+  </div>
