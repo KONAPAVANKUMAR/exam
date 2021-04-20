@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">NET Exam</a>
+   
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link">Students</a>
+        </li>
+       
+      </ul>
+     
+    </div>
+
+  </nav>
+
+  <form (submit)="onSubmit()" style="width: 30vw;margin-top: 2vw;" class="container">
+      <input [(ngModel)]="name" name="name" type="text" placeholder="Enter Name" class="form-control">
+      <input [(ngModel)]="age" name="age" type="number" min="0" placeholder="Enter Age" class="form-control">
+      <select  [(ngModel)]="qua" class="form-control" name="" id="">
+          <option *ngFor="let qualification of qualifications" [value]="qualification">{{qualification.name}}</option>
+      </select>
+      <select class="form-control" name="" id="">
+        <option *ngFor="let category of categories" value="">{{category}}</option>
+    </select>
+    <input type="text" placeholder="Nationality" class="form-control">
+    <input type="text" placeholder="Date Of Birth" class="form-control">
+    <input type="text" placeholder="State" class="form-control">
+
+    <input type="text" placeholder="University" class="form-control">
+    <input type="number" placeholder="Percentage" class="form-control">
+    <input type="number" placeholder="Year of passing" class="form-control">
+    <input type="text" placeholder="district" class="form-control">
+    <br>
+    <div class="d-flex justify-content-around">
+        <input type="reset" class="btn btn-warning text-dark" value="reset">
+        <input type="submit" class="btn btn-success" value="submit">
+    </div>
+
+      
+  </form>
