@@ -15,20 +15,20 @@
   </nav>
 
   <form (submit)="onSubmit()" style="width: 30vw;margin-top: 2vw;" class="container">
-      <input [(ngModel)]="name" name="name" type="text" placeholder="Enter Name" class="form-control">
-      <input [(ngModel)]="age" name="age" type="number" min="0" placeholder="Enter Age" class="form-control">
-      <input [(ngModel)]="qualification" name="qualification" type="text" placeholder="Enter Qualification" class="form-control">
-      <input [(ngModel)]="category" name="category" type="text" placeholder="Enter Category" class="form-control">
+      <input [(ngModel)]="name" name="name" type="text" placeholder="Enter Name" class="form-control" required>
+      <input [(ngModel)]="age" name="age" type="number" min="0" placeholder="Enter Age" class="form-control" required>
+      <input [(ngModel)]="qualification" name="qualification" type="text" placeholder="Enter Qualification" class="form-control" required>
+      <input [(ngModel)]="category" name="category" type="text" placeholder="Enter Category" class="form-control" required>
       
 
-    <input [(ngModel)]="nationality" name="nationality" type="text" placeholder="Nationality" class="form-control">
-    <input [(ngModel)]="dateofbirth" name="dateofbirth" type="text" placeholder="Date Of Birth" class="form-control">
-    <input [(ngModel)]="state" name="state" type="text" placeholder="State" class="form-control">
+    <input [(ngModel)]="nationality" name="nationality" type="text" placeholder="Nationality" class="form-control" required>
+    <input [(ngModel)]="dateofbirth" name="dateofbirth" type="text" placeholder="Date Of Birth" class="form-control" required>
+    <input [(ngModel)]="state" name="state" type="text" placeholder="State" class="form-control" required>
 
-    <input [(ngModel)]="university" name="university" type="text" placeholder="University" class="form-control">
-    <input [(ngModel)]="percentage" name="percentage" type="number" placeholder="Percentage" class="form-control">
-    <input [(ngModel)]="yearofpassing" name="yearofpassing" type="number" placeholder="Year of passing" class="form-control">
-    <input [(ngModel)]="district" name="district" type="text" placeholder="district" class="form-control">
+    <input [(ngModel)]="university" name="university" type="text" placeholder="University" class="form-control" required>
+    <input [(ngModel)]="percentage" name="percentage" type="number" placeholder="Percentage" class="form-control" required>
+    <input [(ngModel)]="yearofpassing" name="yearofpassing" type="number" placeholder="Year of passing" class="form-control" required>
+    <input [(ngModel)]="district" name="district" type="text" placeholder="district" class="form-control" required>
     <br>
     <div class="d-flex justify-content-around">
         <input type="reset" class="btn btn-warning text-dark" value="reset">
