@@ -25,9 +25,9 @@ export class RegisterComponent implements OnInit {
   students = students;
 
   onSubmit(){
-    
-    students.push(new Student(this.name,this.age,this.qualification,this.category,this.nationality,this.dateofbirth,this.state,this.university,this.percentage,this.yearofpassing,this.district))
 
+    students.push(new Student(this.name,this.age,this.qualification,this.category,this.nationality,this.dateofbirth,this.state,this.university,this.percentage,this.yearofpassing,this.district))
+    console.log(this.name,this.age,this.qualification,this.category,this.nationality,this.dateofbirth,this.state,this.university,this.percentage,this.yearofpassing,this.district);
 
   }
 

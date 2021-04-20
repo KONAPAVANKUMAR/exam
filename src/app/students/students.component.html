@@ -8,12 +8,30 @@
 <br>
   <div class="container">
     <table class="table table-striped">
+        <tr>
+
+       
+
+            <th>name</th>
+            <th>age</th>
+            <th>qualification</th>
+            
+            <th>nationality</th>
+            <th>date of birth</th>
+            <th>state</th>
+            <th>university</th>
+            <th>percentage</th>
+            <th>year of passing</th>
+            <th>district</th>
+
+            
+        </tr>
         <tr *ngFor="let student of students">
 
             <td>{{student.name}}</td>
             <td>{{student.age}}</td>
             <td>{{student.qualification}}</td>
-            <td>{{student.category}}</td>
+            
             <td>{{student.nationality}}</td>
             <td>{{student.dateofbirth}}</td>
             <td>{{student.state}}</td>
@@ -21,8 +39,8 @@
             <td>{{student.percentage}}</td>
             <td>{{student.yearofpassing}}</td>
             <td>{{student.district}}</td>
-            <td>{{student.qualification}}</td>
-            <td>{{student.category}}</td>
+
+       
         </tr>
     </table>
   </div>
