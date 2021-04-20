@@ -17,7 +17,10 @@
   <form (submit)="onSubmit()" style="width: 30vw;margin-top: 2vw;" class="container">
       <input [(ngModel)]="name" name="name" type="text" placeholder="Enter Name" class="form-control" required>
       <input [(ngModel)]="age" name="age" type="number" min="0" placeholder="Enter Age" class="form-control" required>
-      <input [(ngModel)]="qualification" name="qualification" type="text" placeholder="Enter Qualification" class="form-control" required>
+      <!-- <input [(ngModel)]="qualification" name="qualification" type="text" placeholder="Enter Qualification" class="form-control" required> -->
+      <select [(ngModel)]="qualification" class="form-control" name="#" id="">
+        <option *ngFor="let qualification of qualifications" [ngValue]="qualification">{{qualification.name}}</option>
+      </select>
       <input [(ngModel)]="category" name="category" type="text" placeholder="Enter Category" class="form-control" required>
       
 

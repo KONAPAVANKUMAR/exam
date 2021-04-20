@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { categories, Qualification, qualifications, Student, students } from '../global';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -8,7 +8,7 @@ import { categories, Qualification, qualifications, Student, students } from '..
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router){}
   name : any = "";
   age : any = "";
   qualification : any = "";
@@ -26,8 +26,15 @@ export class RegisterComponent implements OnInit {
 
   onSubmit(){
 
-    students.push(new Student(this.name,this.age,this.qualification,this.category,this.nationality,this.dateofbirth,this.state,this.university,this.percentage,this.yearofpassing,this.district))
-    console.log(this.name,this.age,this.qualification,this.category,this.nationality,this.dateofbirth,this.state,this.university,this.percentage,this.yearofpassing,this.district);
+    if(this.qualification.name=="degree" || this.qualification.name=="masters"){
+      students.push(new Student(this.name,this.age,this.qualification.name,this.category,this.nationality,this.dateofbirth,this.state,this.university,this.percentage,this.yearofpassing,this.district))
+    }
+    else{
+      this.router.navigate(['/notqualified']);
+    }
+    
+    
+    // console.log(this.name,this.age,this.qualification,this.category,this.nationality,this.dateofbirth,this.state,this.university,this.percentage,this.yearofpassing,this.district);
 
   }
 

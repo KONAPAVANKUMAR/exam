@@ -6,11 +6,11 @@ export interface Qualification {
 }
 
 export const qualifications : Qualification[] = [
-    {name : 'qualification1',allow : 1},
-    {name : 'qualification2',allow : 0},
-    {name : 'qualification3',allow : 1},
-    {name : 'qualification4',allow : 0},
-    {name : 'qualification5',allow : 1},
+    {name : 'none',allow : 0},
+    {name : '10th',allow : 0},
+    {name : 'pu',allow : 0},
+    {name : 'degree',allow : 1},
+    {name : 'masters',allow : 1},
 ]
 
 export const categories : String[] = [
